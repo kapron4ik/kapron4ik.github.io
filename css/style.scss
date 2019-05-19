@@ -1,0 +1,104 @@
+
+body {
+    font-family: 'Saira Extra Condensed', sans-serif;
+}
+
+.myFoto {
+    height: auto;
+    padding: 0;
+}
+
+.modal_block {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -7px;
+    left: 0px;
+    overflow:hidden;
+    &:hover {
+        background: rgba(255,255,255,0.5);
+        height: 105%;
+    }
+}
+
+.ic-main {
+    position: relative;
+    &:hover img{
+        filter: blur(2px);
+        // background:grey;
+        border: 1px solid black;
+    }
+    &:hover .ic-first{
+        bottom: 26px;
+    }
+    &:hover .ic-second{
+        bottom: 26px;
+    }
+    &:hover .ic-text{
+        top: 0px;
+    }
+
+}
+.ic-text {
+    position: absolute;
+    top: -100px;
+    max-width: 100%;
+    margin-left: 25px;
+    margin-right: 25px;
+    position: absolute;
+    font-size: 30px;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-weight: 600;
+    transition: top .5s;
+}
+.ic-first {
+    position: absolute;
+    left: 50px;
+    bottom: -49px;
+    transition: bottom .5s;
+    // animation: second 0.5s;
+}
+
+.ic-second {
+    position: absolute;
+    left: 118px;
+    bottom: -49px;
+    transition: bottom .5s;
+    // animation: second 0.5s;
+}
+
+.ic-centre {
+    font-size: 28px;
+    // position: absolute;
+    // left: 47px;
+    // bottom: -49px;
+}
+
+.ic-circle {
+    font-size: 60px;
+    position: absolute;
+    left: -17px;
+    bottom: -14px;
+    animation: first 1s infinite;  
+}
+
+
+@keyframes first {
+    0% {transform: rotate(0deg)}
+    100% {transform: rotate(360deg)}
+}
+
+// @keyframes second {
+//     0% {transform: translate(0,0)}
+//     100% {transform: translate(0,50px)}
+// }
+
+#portfolio a {
+    color: black;
+}
+
+#portfolio a:hover {
+    color: #007BFF;
+}
+
+

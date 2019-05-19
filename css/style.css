@@ -1,0 +1,118 @@
+body {
+  font-family: 'Saira Extra Condensed', sans-serif;
+}
+
+.myFoto {
+  height: auto;
+  padding: 0;
+}
+
+.modal_block {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -7px;
+  left: 0px;
+  overflow: hidden;
+}
+
+.modal_block:hover {
+  background: rgba(255, 255, 255, 0.5);
+  height: 105%;
+}
+
+.ic-main {
+  position: relative;
+}
+
+.ic-main:hover img {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  border: 1px solid black;
+}
+
+.ic-main:hover .ic-first {
+  bottom: 26px;
+}
+
+.ic-main:hover .ic-second {
+  bottom: 26px;
+}
+
+.ic-main:hover .ic-text {
+  top: 0px;
+}
+
+.ic-text {
+  position: absolute;
+  top: -100px;
+  max-width: 100%;
+  margin-left: 25px;
+  margin-right: 25px;
+  position: absolute;
+  font-size: 30px;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-weight: 600;
+  -webkit-transition: top .5s;
+  transition: top .5s;
+}
+
+.ic-first {
+  position: absolute;
+  left: 50px;
+  bottom: -49px;
+  -webkit-transition: bottom .5s;
+  transition: bottom .5s;
+}
+
+.ic-second {
+  position: absolute;
+  left: 118px;
+  bottom: -49px;
+  -webkit-transition: bottom .5s;
+  transition: bottom .5s;
+}
+
+.ic-centre {
+  font-size: 28px;
+}
+
+.ic-circle {
+  font-size: 60px;
+  position: absolute;
+  left: -17px;
+  bottom: -14px;
+  -webkit-animation: first 1s infinite;
+          animation: first 1s infinite;
+}
+
+@-webkit-keyframes first {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes first {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+#portfolio a {
+  color: black;
+}
+
+#portfolio a:hover {
+  color: #007BFF;
+}
+/*# sourceMappingURL=style.css.map */
